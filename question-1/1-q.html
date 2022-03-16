@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 1</title>
+    <script>
+      // ## what is the result of this code when we execute?
+
+      var value = 0; // global
+
+      function someFunction() {
+        if (1) {
+          // true pass
+          value = true;
+        } else {
+          var value = false; // block scope
+        }
+        console.log(value); // true
+      }
+
+      someFunction();
+
+      // the correct answer is // true
+      // we will get an error ?
+      // 0
+
+      var name = 'nina';
+
+      name = 'cey';
+    </script>
+  </head>
+  <body>
+    <h1>Question 1</h1>
+  </body>
+</html>
