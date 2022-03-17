@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 5</title>
+    <script>
+      // curring technique
+      // ## Q5
+      // write a function that adds numbers when called twice
+      // currying << !!
+      // add(3)(4) >> // 7
+
+      function add(x) {
+        return function (y) {
+          return x + y;
+        };
+      }
+      console.log(add(3)(4)); // 7
+
+      function addSecond(num1, num2) {
+        return num1 + num2;
+      }
+
+      // sorting
+      var arr = [1, 2, 31, 24, -67, 5, 3, 555, 79, -4, 21, 33, 89, -90];
+      function compareNumeric(a, b) {
+        if (a >= b) {
+          return 1;
+        }
+        if (a < b) {
+          return -1;
+        }
+      }
+      var sortedArr = arr.sort(compareNumeric);
+      console.log(sortedArr);
+      // min value
+      var minValue = sortedArr[0];
+      var maxValue = sortedArr[arr.length - 1];
+
+      console.log(minValue);
+      console.log(maxValue);
+
+      console.log([] === []);
+      console.log({} === {});
+      console.log([] !== []);
+      console.log({} !== {});
+    </script>
+  </head>
+  <body>
+    <h1>Question 5</h1>
+  </body>
+</html>
