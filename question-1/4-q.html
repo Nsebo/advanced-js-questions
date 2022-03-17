@@ -35,8 +35,22 @@
 
         return counter;
       }
-
       console.log(strCount(someObj));
+
+      // Javascript Coding Challenge #3: Palindrome Check (Freecodecamp)
+
+      function palindrome(str) {
+        var reg = /[\W_]/g; // this is a pattern
+
+        var smallStr = str.toLowerCase().replace(reg, '');
+
+        console.log(smallStr);
+
+        var reversed = str.split('').reverse().join('');
+        if (reversed === smallStr) return true;
+        return false;
+      }
+      palindrome('racecars');
     </script>
   </head>
   <body>
